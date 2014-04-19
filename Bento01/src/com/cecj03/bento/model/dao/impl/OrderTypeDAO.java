@@ -17,7 +17,6 @@ public class OrderTypeDAO {
 
 	public List<OrderType> findAll() {
 		Session session = sessionFactory.openSession();
-
 		return (List<OrderType>) session.createCriteria(OrderType.class).list();
 	}
 

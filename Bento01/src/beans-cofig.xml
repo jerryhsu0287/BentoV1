@@ -30,7 +30,7 @@
 		</property>
 	</bean>
 
-	<bean id="OrderTypeDao" class="com.cecj03.bento.model.dao.impl.OrderTypeDAO">
+	<bean id="OrderTypeDao" class="com.cecj03.bento.model.dao.impl.OrderTypeDaoImpl">
 		<property name="sessionFactory">
 			<ref bean="sessionFactory" />
 		</property>
