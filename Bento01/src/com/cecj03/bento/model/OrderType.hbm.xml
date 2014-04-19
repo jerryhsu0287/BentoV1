@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 19, 2014 1:49:49 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="com.cecj03.bento.model.OrderType" table="ORDER_TYPES">
+		<id name="id" type="int">
+			<column name="id" />
+			<generator class="native" />
+		</id>
+		<property name="type" type="java.lang.String">
+			<column name="type" />
+		</property>
+		<property name="showName" type="java.lang.String">
+			<column name="show_name" />
+		</property>
+		<property name="startTime" type="java.sql.Time">
+			<column name="start_time" />
+		</property>
+		<property name="endTime" type="java.sql.Time">
+			<column name="end_time" />
+		</property>
+		<property name="deductSalary" type="char">
+			<column name="deduct_salary" />
+		</property>
+		<property name="notifyManager" type="char">
+			<column name="notify_manager" />
+		</property>
+		<property name="updateBy" type="int">
+			<column name="update_by" />
+		</property>
+		<property name="updateTime" type="java.sql.Timestamp">
+			<column name="update_time" />
+		</property>
+	</class>
+</hibernate-mapping>

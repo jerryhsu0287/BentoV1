@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 19, 2014 1:52:15 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="com.cecj03.bento.model.Restaurant" table="RESTAURANTS">
+		<id name="id" type="int">
+			<column name="id" />
+			<generator class="native" />
+		</id>
+		<property name="name" type="java.lang.String">
+			<column name="name" />
+		</property>
+		<property name="tel" type="java.lang.String">
+			<column name="tel" />
+		</property>
+		<property name="address" type="java.lang.String">
+			<column name="address" />
+		</property>
+		<property name="action" type="char">
+			<column name="action" />
+		</property>
+		<property name="remark" type="java.lang.String">
+			<column name="remark" />
+		</property>
+		<property name="note" type="java.lang.String">
+			<column name="note" />
+		</property>
+		<!-- <primitive-array name="dm" table="RESTAURANT"> -->
+		<!-- <key> -->
+		<!-- <column name="ID" /> -->
+		<!-- </key> -->
+		<!-- <index></index> -->
+		<!-- <element type="byte"> -->
+		<!-- <column name="DM" /> -->
+		<!-- </element> -->
+		<!-- </primitive-array> -->
+		<property name="dm">
+			<column name="dm" sql-type="binary" />
+		</property>
+		<property name="updateBy" type="int">
+			<column name="update_by" />
+		</property>
+		<property name="updateTime" type="java.sql.Timestamp">
+			<column name="update_time" />
+		</property>
+	</class>
+</hibernate-mapping>
