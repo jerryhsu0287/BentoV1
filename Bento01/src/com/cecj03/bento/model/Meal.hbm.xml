@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 19, 2014 3:38:30 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.cecj03.bento.model.Meal" table="MEALS">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="restaurantId" type="int">
+            <column name="restaurant_id" />
+        </property>
+        <property name="sort" type="int">
+            <column name="sort" />
+        </property>
+        <property name="name" type="java.lang.String">
+            <column name="name" />
+        </property>
+        <property name="price" type="double">
+            <column name="price" />
+        </property>
+        <property name="action" type="char">
+            <column name="action" />
+        </property>
+        <property name="updateBy" type="int">
+            <column name="update_by" />
+        </property>
+        <property name="updateTime" type="java.sql.Timestamp">
+            <column name="update_time" />
+        </property>
+    </class>
+</hibernate-mapping>

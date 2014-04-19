@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 19, 2014 10:56:07 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+	<class name="com.cecj03.bento.model.DailyMeal" table="daily_meals">
+		<id name="id" type="int">
+			<column name="id" />
+			<generator class="native" />
+		</id>
+		<property name="orderDate" type="java.sql.Timestamp">
+			<column name="order_date" />
+		</property>
+		<property name="orderTypeId" type="int">
+			<column name="order_type_id" />
+		</property>
+		<property name="mealId" type="int">
+			<column name="meal_id" />
+		</property>
+		<property name="change" type="char">
+			<column name="change" />
+		</property>
+		<property name="amount" type="double">
+			<column name="amount" />
+		</property>
+		<property name="realPrice" type="double">
+			<column name="real_price" />
+		</property>
+		<property name="action" type="char">
+			<column name="action" />
+		</property>
+		<property name="updateBy" type="int">
+			<column name="update_by" />
+		</property>
+		<property name="updateTime" type="java.sql.Timestamp">
+			<column name="update_time" />
+		</property>
+	</class>
+</hibernate-mapping>

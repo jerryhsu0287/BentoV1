@@ -21,6 +21,8 @@
 			<list>
 				<value>com/cecj03/bento/model/OrderType.hbm.xml</value>
 				<value>com/cecj03/bento/model/Restaurant.hbm.xml</value>
+				<value>com/cecj03/bento/model/Meal.hbm.xml</value>
+				<value>com/cecj03/bento/model/DailyMeal.hbm.xml</value>
 			</list>
 		</property>
 		<property name="hibernateProperties">
@@ -31,6 +33,24 @@
 	</bean>
 
 	<bean id="OrderTypeDao" class="com.cecj03.bento.model.dao.impl.OrderTypeDaoImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+
+	<bean id="RestaurantDao" class="com.cecj03.bento.model.dao.impl.RestaurantDaoImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+
+	<bean id="MealDao" class="com.cecj03.bento.model.dao.impl.MealDaoImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+
+	<bean id="DailyMealDao" class="com.cecj03.bento.model.dao.impl.DailyMealDaoImpl">
 		<property name="sessionFactory">
 			<ref bean="sessionFactory" />
 		</property>
